@@ -1,8 +1,12 @@
+import Users from '../components/Users'
 import React from 'react'
 
 function Home() {
   return (
-    <h1>Hola Mundo</h1>
+    <section>
+      <h1>Home Page</h1>
+      <Users />
+    </section>
   )
 }
 
