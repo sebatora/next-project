@@ -1,12 +1,14 @@
 "use client"
+import Link from 'next/link'
 import React from 'react'
 
 function PostCard( { post } ) {
   return (
     <article>
       <h3>{post.id}. {post.title}</h3>
-      <p>{post.body}</p>
-      <button onClick={() => alert("click")}>Cerrar</button>
+      <Link href={`/posts/${post.id}`}>
+        <button>VER</button>
+      </Link>
     </article>
   )
 }

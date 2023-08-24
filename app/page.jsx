@@ -1,4 +1,4 @@
-import Users from '../components/Users'
+import Users from '@/components/Users'
 import React from 'react'
 
 function Home() {
